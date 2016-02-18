@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 import os
 import re
-import shutil
-import sys
 
 from setuptools import setup
 
@@ -20,7 +18,7 @@ version = get_version('djbitcoin')
 readme = open('README.rst').read()
 
 setup(
-    name='djbitcoin',
+    name='dj-bitcoin',
     version=version,
     url='https://github.com/silverlogic/dj-bitcoin',
     license='MIT',
