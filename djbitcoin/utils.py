@@ -1,6 +1,5 @@
 from hashlib import sha256
 
-
 digits58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'
 
 
