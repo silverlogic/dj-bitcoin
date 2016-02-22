@@ -11,5 +11,8 @@ def decode_base58(bc, length):
 
 
 def is_bitcoin_address_valid(address):
-    bcbytes = decode_base58(address, 25)
+    try:
+        bcbytes = decode_base58(address, 25)
+    except ValueError:
+        return False
     return bcbytes[-4:] == sha256(sha256(bcbytes[:-4]).digest()).digest()[:4]
